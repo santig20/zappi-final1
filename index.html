@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link CSS main-->
+    <link rel="stylesheet" href="./assets/style.css" />
+    <!-- CSS mediaqueries -->
+    <link rel="stylesheet" href="./assets/mediaqueries.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <title>NucbaZappi</title>
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav__icon-container">
+            <img src="./assets/img/nucbazappiicon 1.svg" class="nav-icon" />
+        </div>
+        <div class="nav__button-container navbar-list">
+            <i class="fa-solid fa-house home-button home-btn"><a href="#">Home</a></i
+        >
+        <i class="fa-solid fa-cart-shopping cart-btn" id="cart-btn"
+          ><span>Cart</span></i
+        >
+      </div>
+      <i class="fa-solid fa-bars menu-label"></i>
+            <div class="cart">
+                <h2>Tu carrito</h2>
+
+                <div class="cart-container"></div>
+
+                <span class="divider"></span>
+
+                <div class="cart-total">
+                    <p>Total:</p>
+                    <span class="total">18.3 ETH</span>
+                </div>
+                <button class="btn-buy">Comprar</button>
+            </div>
+            <!-- Div vacio de overlay para el efecto glass -->
+            <div class="overlay"></div>
+    </nav>
+    <section class="hero-section">
+        <div class="hero__container">
+            <div class="hero__text-container">
+                <h1>Si tenes Zappi,</h1>
+                <h2>tenes Nucba.</h2>
+                <p>Buscá lo que quieras y nucba te quedes sin comida.</p>
+                <input type="button" value="VER MÁS" class="hero-button" />
+            </div>
+            <div class="hero__img-container">
+                <img src="./assets/img/pizzahero1.svg" alt="" />
+                <img src="./assets/img/pizzahero2.svg" alt="" class="pizza2" />
+            </div>
+        </div>
+    </section>
+    <section class="recommended-section">
+        <div class="recommended__container">
+            <div class="recommended__text">
+                <p>Hoy te recomendamos</p>
+            </div>
+            <div class="recommended__cards-container">
+                <div class="recommended__card">
+                    <div class="recommended__card-img">
+                        <img src="./assets/img/nucbazappiicon 1.svg" alt="" />
+                    </div>
+                    <div class="recommended__card-text">
+                        <h4>Bennazianna</h4>
+                        <p>La mas completa</p>
+                        <b>$3650</b>
+                    </div>
+                    <div class="recommended__card-button">
+                        <input type="button" value="Agregar" />
+                    </div>
+                </div>
+                <div class="recommended__card">
+                    <div class="recommended__card-img">
+                        <img src="./assets/img/nucbazappiicon 1.svg" alt="" />
+                    </div>
+                    <div class="recommended__card-text">
+                        <h4>Bennazianna</h4>
+                        <p>La mas completa</p>
+                        <b>$3650</b>
+                    </div>
+                    <div class="recommended__card-button">
+                        <input type="button" value="Agregar" />
+                    </div>
+                </div>
+                <div class="recommended__card">
+                    <div class="recommended__card-img">
+                        <img src="./assets/img/nucbazappiicon 1.svg" alt="" />
+                    </div>
+                    <div class="recommended__card-text">
+                        <h4>Bennazianna</h4>
+                        <p>La mas completa</p>
+                        <b>$3650</b>
+                    </div>
+                    <div class="recommended__card-button">
+                        <input type="button" value="Agregar" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="categorias-section">
+        <div class="categorias__container">
+            <div class="categorias__text">
+                <p>Categorías</p>
+            </div>
+            <div class="categorias__cards-container">
+                <div class="category active" data-category="todas">
+                    <div class="categorias__card-img">
+                        <img src="./assets/img/Pizza.png" alt="" />
+                    </div>
+                    <div class="categorias__card-text">
+                        <p>Todas</p>
+                    </div>
+                    <div class="categorias__bottom-bar"></div>
+                </div>
+                <div class="category" data-category="pizzas">
+                    <div class="categorias__card-img">
+                        <img src="./assets/img/Pizza.png" alt="" />
+                    </div>
+                    <div class="categorias__card-text">
+                        <p>Pizzas</p>
+                    </div>
+                    <div class="categorias__bottom-bar"></div>
+                </div>
+                <div class="category" data-category="hamburguesas">
+                    <div class="categorias__card-img">
+                        <img src="./assets/img/Burguer.png" alt="" />
+                    </div>
+                    <div class="categorias__card-text">
+                        <p>Hamburguesas</p>
+                    </div>
+                    <div class="categorias__bottom-bar"></div>
+                </div>
+                <div class="category" data-category="papas">
+                    <div class="categorias__card-img">
+                        <img src="./assets/img/Papas.png" alt="" />
+                    </div>
+                    <div class="categorias__card-text">
+                        <p>Napapuki</p>
+                    </div>
+                    <div class="categorias__bottom-bar"></div>
+                </div>
+                <div class="category" data-category="individuales">
+                    <div class="categorias__card-img">
+                        <img src="./assets/img/pizza 2.png" alt="" />
+                    </div>
+                    <div class="categorias__card-text">
+                        <p>Individuales</p>
+                    </div>
+                    <div class="categorias__bottom-bar"></div>
+                </div>
+                <div class="category" data-category="wraps">
+                    <div class="categorias__card-img">
+                        <img src="./assets/img/buritto 1.png" alt="" />
+                    </div>
+                    <div class="categorias__card-text">
+                        <p>Wraps</p>
+                    </div>
+                    <div class="categorias__bottom-bar"></div>
+                </div>
+                <div class="category" data-category="mexicano">
+                    <div class="categorias__card-img">
+                        <img src="./assets/img/Burrito.png" alt="" />
+                    </div>
+                    <div class="categorias__card-text">
+                        <p>Mexican Food</p>
+                    </div>
+                    <div class="categorias__bottom-bar"></div>
+                </div>
+                <div class="category" data-category="batidos">
+                    <div class="categorias__card-img">
+                        <img src="./assets/img/float 1.png" alt="" />
+                    </div>
+                    <div class="categorias__card-text">
+                        <p>Batidukis</p>
+                    </div>
+                    <div class="categorias__bottom-bar"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="products-section">
+        <div class="products__container-text"></div>
+        <div class="products__container">
+            <div class="products__container-cards">
+                <!-- <div class="products__card">
+                    <img src="./assets/img/pizza-de-provolone.jpg" alt="" />
+                    <div class="products__card-info">
+                        <div class="products__card-text">
+                            <h4>La Charly Garcia</h4>
+                            <p>¡BASTA!</p>
+                            <b>$380</b>
+                        </div>
+                        <div class="products__card-button">
+                            <input type="button" value="Agregar" />
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <button class="btn-load">Ver Más</button>
+    </section>
+    <script src="./assets/productos.js"></script>
+    <script src="./assets/main.js"></script>
+</body>
+
+</html>
