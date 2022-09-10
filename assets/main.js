@@ -46,9 +46,9 @@ const renderProduct = (product) => {
                         <div class="products__card-text">
                             <h4>${nombre}</h4>
                             <p>¡BASTA!</p>
-                            <b>$${precio}</b>
                         </div>
                         <div class="products__card-button">
+                            <b>$ ${precio}</b>
                             <button class="btn-add"
                             data-id="${id}"
                             data-name="${nombre}"
