@@ -3,10 +3,7 @@ const productsData = [{
         nombre: "4 quesos",
         ingredientes: [
             "carne",
-            "roquefort",
-            "parmesano",
-            "dambo",
-            "muzzarella",
+            "4 quesos",
             "cebolla",
             "tomate",
             "lechuga",
@@ -27,9 +24,7 @@ const productsData = [{
             "chorrillana",
             "salsa especial",
             "chimichurri",
-            "tomate",
-            "lechuga",
-            "cebolla",
+            "verduras",
             "papas fritas",
         ],
         precio: 1200,
@@ -167,7 +162,6 @@ const productsData = [{
             "repollo",
             "brócoli",
             "ananá",
-            "tomate",
         ],
         precio: 500,
         imagen: "batido3.jpg",
@@ -349,18 +343,16 @@ const productsData = [{
         imagen: "atun.jpg",
         category: "pizzas",
     },
+    // wraps
     {
         id: 37,
         nombre: "Jamón y queso",
         ingredientes: [
-            "tortilla",
-            "jamón",
-            "queso",
+             "jamón", "queso",
             "lechuga",
             "tomate",
-            "pepino",
-            "cebolla",
-            "aceitunas",
+            "pepino...",
+          
         ],
         precio: 700,
         imagen: "wrap_jamonyqueso.jpg",
@@ -370,15 +362,13 @@ const productsData = [{
         id: 38,
         nombre: "Pollo y tocino",
         ingredientes: [
-            "tortilla",
+           
             "pollo",
             "queso",
             "tocino",
             "lechuga",
-            "tomate",
-            "pepino",
-            "cebolla",
-            "aceitunas",
+            "tomate..",
+          
         ],
         precio: 700,
         imagen: "wrap_polloytocino.jpg",
@@ -388,15 +378,13 @@ const productsData = [{
         id: 39,
         nombre: "Cerdo y queso",
         ingredientes: [
-            "tortilla",
+           
             "cerdo",
             "queso",
             "lechuga",
             "tomate",
-            "pepino",
-            "cebolla",
-            "hongos",
-            "aceitunas",
+            "pepino..",
+            
         ],
         precio: 700,
         imagen: "wrap_cerdoyqueso.jpg",
@@ -412,7 +400,7 @@ const productsData = [{
             "croutones",
             "aderezo cesar",
             "tomate",
-            "lechuga",
+            "lechuga..",
         ],
         precio: 700,
         imagen: "wrap_cesar.jpg",
@@ -426,13 +414,8 @@ const productsData = [{
             "pastrami",
             "pepperoni",
             "pollo",
-            "jamón",
-            "queso",
-            "lechuga",
-            "tomate",
-            "pepino",
-            "cebolla",
-            "aceitunas",
+            "jamón..",
+            
         ],
         precio: 700,
         imagen: "wrap_completo.jpg",
@@ -441,15 +424,13 @@ const productsData = [{
     {
         id: 42,
         nombre: "Vegetariano",
-        ingredientes: [
-            "tortilla",
+        ingredientes: [ 
             "queso",
             "lechuga",
             "tomate",
             "pepino",
-            "cebolla",
-            "hongos",
-            "aceitunas",
+            "cebolla..",
+           
         ],
         precio: 700,
         imagen: "wrap_vegetariano.jpg",
@@ -464,7 +445,7 @@ const productsData = [{
             "piña",
             "pasta de achiote",
             "verduras",
-            "condimentos",
+            "condimentos..",
         ],
         precio: 700,
         imagen: "taco_pastor.jpg",
@@ -538,3 +519,5 @@ const allProducts = {
     next: 1,
     limit: splitProducts(12).length,
 };
+
+

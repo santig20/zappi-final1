@@ -1,9 +1,87 @@
-/* Tablet */
+@media (max-width: 1550px) {
+    .recommended__card {
+        flex-direction: column;
+        width: 20%;
+        height: 14rem;
+        align-items: center;
+        padding: 10px;
+    }
+    .recommended__card-text {
+        text-align: center;
+        margin: 5px;
+    }
+    .recommended__card-text p h4 b {
+        padding: 20px;
+    }
+}
 
-@media (max-width: 992px) {}
+@media (max-width: 1300px) {
+    .recommended__card {
+        width: 25%;
+    }
+}
 
 
-/* Celu */
+@media (max-width: 1200px) {
+    .hero__img-container img {
+        width: 350px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .hero__text-container h1 {
+        color: var(--white-main);
+        font-size: 2.3rem;
+    }
+    
+    .hero__text-container h2 {
+        font-size: 1.5rem;
+        color: var(--white-main);
+    }
+    
+    .hero__text-container p {
+        font-weight: var(--light);
+        color: var(--white-main);
+        margin: 3rem 0 3rem 0;
+    }
+}
+
+@media (max-width: 800px) {
+    .recommended__card {
+        flex-direction: row;
+        width: 60%;
+        height: 8rem;
+        align-items: center;
+        padding: 10px;
+    }
+    .recommended__cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 700px) {
+    .hero__container {
+        flex-direction: column;
+    }
+    .hero__text-container {
+        margin: 0 0px 0 0;
+        height: 15rem;
+        align-items: center;
+    }
+    .hero__text-container p {
+        margin: 20px 0 20px 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .recommended__card {
+        flex-direction: column;
+        width: 300px;
+        height: 14rem;
+    }
+}
 
 @media (max-width: 576px) {
     /*header*/
@@ -19,7 +97,7 @@
         top: 5rem;
         left: 0;
         width: 100%;
-        height: 20rem;
+        height: 15rem;
         flex-direction: column;
         background-color: var(--bg-gray);
         border-top: 0px;
@@ -39,6 +117,7 @@
         order: 2;
         cursor: pointer;
         visibility: visible;
+        margin-right: 2rem;
     }
     .menu-label img {
         height: 20px;
@@ -47,6 +126,17 @@
     .open-menu {
         display: flex;
     }
+    .nav__button-container {
+        align-items: center;
+    }
+    .hero__text-container h1 {
+        text-align: center;
+    }
 }
 
-@media (max-width: 450px) {}
+@media (max-width: 400px) {
+    .hero__img-container img {
+        width: 300px;
+    }
+}
+
