@@ -44,12 +44,13 @@ body {
     height: 64px;
     margin: 0 auto;
     margin-top: 10px;
-    position: relative;
+    position: fixed;
     /* border: 1px solid red; */
 }
 
 .nav__icon-container img {
     width: 3rem;
+    ;
 }
 
 .nav-icon {
