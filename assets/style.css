@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
 :root {
     --bg-black: #131415;
     --bg-gray: #252525;
@@ -6,8 +7,8 @@
     --yellow-main: #ffa400;
     --white-main: #ffffff;
     --red-main: #fc2933;
-    --gradient: linear-gradient( to right, #ffa100, #ff860e, #ff691f, #ff472f, #fb103d);
-    --gradient-hover: linear-gradient( to right, #f1ab32, #fa942e, #f88044, #f3634f, #fb103d);
+    --gradient: linear-gradient(to right, #ffa100, #ff860e, #ff691f, #ff472f, #fb103d);
+    --gradient-hover: linear-gradient(to right, #f1ab32, #fa942e, #f88044, #f3634f, #fb103d);
     --light: 300;
     --regular: 400;
     --medium: 500;
@@ -23,13 +24,13 @@
     font-family: "Montserrat";
 }
 
-
-/* NAVBAR */
-
 body {
     background-color: var(--bg-black);
     align-items: center;
+    overflow-x: hidden;
 }
+
+/* NAVBAR */
 
 .menu-label {
     visibility: hidden;
@@ -44,13 +45,11 @@ body {
     height: 64px;
     margin: 0 auto;
     margin-top: 10px;
-    position: fixed;
-    /* border: 1px solid red; */
+    position: relative;
 }
 
 .nav__icon-container img {
     width: 3rem;
-    ;
 }
 
 .nav-icon {
@@ -180,23 +179,32 @@ body {
     display: flex;
     text-align: center;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 20%;
-    height: 8rem;
+    height: 6rem;
     margin: 1rem;
     background: var(--bg-gray);
     border-radius: 10px;
     box-shadow: -3px 2px 20px 5px rgba(0, 0, 0, 0.75);
+    padding: 1rem;
 }
 
 .recommended__card-text {
     text-align: start;
 }
 
+.recommended__card-img img {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 1em;
+    object-fit: cover
+}
+
 .recommended__card-text h4,
 .products__card-info h4 {
     color: var(--white-main);
     font-weight: var(--medium);
+    margin-bottom: 5px;
 }
 
 .recommended__card-text p,
@@ -209,10 +217,6 @@ body {
 .recommended__card-text b,
 .products__card-info b {
     color: var(--yellow-main);
-}
-
-.recommended__card-img img {
-    width: 3.5rem;
 }
 
 .recommended__card-button input,
@@ -277,6 +281,10 @@ body {
     justify-content: center;
 }
 
+.img-all {
+    filter: invert(20%);
+}
+
 .category {
     display: flex;
     flex-direction: column;
@@ -326,7 +334,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 50px;
 }
 
 .products__container-cards {
@@ -349,8 +356,8 @@ body {
     border-radius: 10px;
     background: var(--bg-gray);
     box-shadow: -3px 2px 20px 5px rgba(0, 0, 0, 0.75);
-    height: 18rem;
-    width: 18rem;
+    height: 19rem;
+    width: 19rem;
     margin: 10px;
 }
 
@@ -360,7 +367,7 @@ body {
     border-radius: 10px;
 }
 
-.products__card-info {
+/* .products__card-info {
     display: flex;
     width: 16rem;
     height: 100%;
@@ -368,31 +375,39 @@ body {
     justify-content: space-around;
     align-items: center;
     text-align: center;
-}
-
-.products__card-info p {
-    text-align: center;
-}
-
-.products__card-info button {
-    display: flex;
-    margin-bottom: -10px;
-}
+} */
 
 .products__card-text {
-    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    /* outline: 1px solid red; */
+    position: relative;
+    bottom: .4rem;
+    height: 5rem;
+    justify-content: space-evenly;
     align-items: center;
 }
 
 .products__card-text h4 {
     font-weight: 700;
     letter-spacing: 1px;
+    /* outline: 1px solid blue; */
 }
 
 .products__card-text p {
+    color: #aaa;
     width: 14rem;
-    margin: 5px 0 5px 8px;
     text-align: center;
+    /* outline: 1px solid blue; */
+}
+
+.products__card-button {
+    display: flex;
+    width: 16rem;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2em;
+    /* outline: 1px solid red; */
 }
 
 .products__card-info button:hover,
@@ -499,7 +514,7 @@ body {
     color: var(--white-main);
     font-weight: 300;
     font-size: 12px;
-    margin : 5px 0 5px 10px;
+    margin: 5px 0 5px 10px;
 }
 
 .item-price {
@@ -586,4 +601,25 @@ body {
 
 .disabled {
     background: var(--bg-gray-hover);
+}
+
+/* Footer */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.footer__link-container {
+    display: flex;
+    gap: 30px
+}
+
+.text {
+    color: #aaa;
+    text-decoration: none;
 }

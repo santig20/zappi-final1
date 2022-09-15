@@ -343,16 +343,16 @@ const productsData = [{
         imagen: "atun.jpg",
         category: "pizzas",
     },
-    // wraps
     {
         id: 37,
         nombre: "Jamón y queso",
         ingredientes: [
-             "jamón", "queso",
+            "tortilla", "jamón", "queso",
             "lechuga",
             "tomate",
-            "pepino...",
-          
+            "pepino",
+            "cebolla",
+            "aceitunas",
         ],
         precio: 700,
         imagen: "wrap_jamonyqueso.jpg",
@@ -362,13 +362,15 @@ const productsData = [{
         id: 38,
         nombre: "Pollo y tocino",
         ingredientes: [
-           
+            "tortilla",
             "pollo",
             "queso",
             "tocino",
             "lechuga",
-            "tomate..",
-          
+            "tomate",
+            "pepino",
+            "cebolla",
+            "aceitunas",
         ],
         precio: 700,
         imagen: "wrap_polloytocino.jpg",
@@ -378,13 +380,15 @@ const productsData = [{
         id: 39,
         nombre: "Cerdo y queso",
         ingredientes: [
-           
+            "tortilla",
             "cerdo",
             "queso",
             "lechuga",
             "tomate",
-            "pepino..",
-            
+            "pepino",
+            "cebolla",
+            "hongos",
+            "aceitunas",
         ],
         precio: 700,
         imagen: "wrap_cerdoyqueso.jpg",
@@ -400,7 +404,7 @@ const productsData = [{
             "croutones",
             "aderezo cesar",
             "tomate",
-            "lechuga..",
+            "lechuga",
         ],
         precio: 700,
         imagen: "wrap_cesar.jpg",
@@ -414,8 +418,13 @@ const productsData = [{
             "pastrami",
             "pepperoni",
             "pollo",
-            "jamón..",
-            
+            "jamón",
+            "queso",
+            "lechuga",
+            "tomate",
+            "pepino",
+            "cebolla",
+            "aceitunas",
         ],
         precio: 700,
         imagen: "wrap_completo.jpg",
@@ -424,13 +433,15 @@ const productsData = [{
     {
         id: 42,
         nombre: "Vegetariano",
-        ingredientes: [ 
+        ingredientes: [
+            "tortilla",
             "queso",
             "lechuga",
             "tomate",
             "pepino",
-            "cebolla..",
-           
+            "cebolla",
+            "hongos",
+            "aceitunas",
         ],
         precio: 700,
         imagen: "wrap_vegetariano.jpg",
@@ -445,7 +456,7 @@ const productsData = [{
             "piña",
             "pasta de achiote",
             "verduras",
-            "condimentos..",
+            "condimentos",
         ],
         precio: 700,
         imagen: "taco_pastor.jpg",
@@ -519,5 +530,3 @@ const allProducts = {
     next: 1,
     limit: splitProducts(12).length,
 };
-
-
